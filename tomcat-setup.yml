@@ -1,7 +1,6 @@
 ---
 - name: Tomcat deployment playbook
   hosts: all       # Inventory hosts group / server to act on
-
     tomcat_ver: 9.0.52                          # Tomcat version to install
     ui_manager_user: manager                    # User who can access the UI manager section only
     ui_manager_pass: Str0ngManagerP@ssw3rd      # UI manager user password

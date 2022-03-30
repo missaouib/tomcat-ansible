@@ -1,10 +1,7 @@
 ---
 - name: Tomcat deployment playbook
-  hosts: tomcat-nodes       # Inventory hosts group / server to act on
-  become: yes               # If to escalate privilege
-  become_method: sudo       # Set become method
-  remote_user: root         # Update username for remote server
-  vars:
+  hosts: all       # Inventory hosts group / server to act on
+
     tomcat_ver: 9.0.52                          # Tomcat version to install
     ui_manager_user: manager                    # User who can access the UI manager section only
     ui_manager_pass: Str0ngManagerP@ssw3rd      # UI manager user password
